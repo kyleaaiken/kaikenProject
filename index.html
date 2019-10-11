@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Adventures Insurance, a unique insurance from LA, California.">
+    <title>Adventures Insurance Home</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--the heading linking all the pages-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Agents</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+		<img src="images/logo.png" id="headerLogo" alt="Adventures Insurance Logo" />
+    </header>
+    
+
+    <!--the motto that should be in a box-->
+    <section class="motto">
+        <p>Adventures Insurance: your safe place in an unsafe world!</p>
+    </section>
+
+    <!--section with articles spaced out, with rounded images on top-->
+    <section class="middle">
+        <article class="art1">
+            <img src="images/llama.png" alt="Llama close-up"/>
+            <p>
+                Adventures Insurance is a unique insurance company specifically designed for carnivals, zoos, circuses, amusement parks and fairs. We serve a variety of coverages and options for our clients that range from Ringling Brothers to the South Carolina State Fair to the Poughkeepsie Petting Zoo in New York.
+            </p>
+        </article>
+		
+        <article class="art2">
+            <img src="images/coaster.png" alt="roller coaster dropping"/>
+            <p>
+                Adventures Insurance, located in the heart of sunny Los Angeles, California, takes great pride in providing affordable coverages for entertainment groups of all sizes. Our clients are insured for rides, animals, food vendors, parties, special events, traveling amusement groups, public liability, premises, worker's compensation and all coverage is affordable and transferrable.
+            </p>
+        </article>
+		
+        <!--the social media article that should change using javascript-->
+        <article class="socialmedia">
+            <h1>News From Facebook</h1>
+            <p id="facebookNews">This is temporary content that will be filled in with dynamic content once we get JavaScript going</p>
+        </article>
+    </section>
+
+    <footer>
+        <p><span id="copyrightYear"></span><img src="images/facebookgray.png" id="facebookLogo" /></p>
+    </footer>
+	<script src="insuranceScript.js"></script>
+</body>
+</html>

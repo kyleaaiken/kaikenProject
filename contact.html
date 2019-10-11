@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Contact Adventures Insurance">
+    <title>Contact Us</title>
+	
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <!--the heading linking all the pages-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Agents</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <img src="images/logo.png" id="headerLogo" alt="Adventures Insurance Logo" />
+    </header>
+    <!--start of the form-->
+    <section class="form">
+        <form id="contactForm" method="post" action="http://severien.com/grit/formecho.php">
+            <h1>Contact Adventures Insurance</h1>
+            <ul>
+                <li>
+                    <label for="firstName">First Name:</label>
+                    <input required="required" size="25" type="text" name="firstName" id="firstName" placeholder="First Name" />
+                </li>
+                <li>
+                    <label for="lastName">Last Name:</label>
+                    <input required="required" size="25" type="text" name="lastName" id="lastName" placeholder="Last Name" />
+                </li>
+                <li>
+                    <label for="Email-Address">Email Address:</label>
+                    <input required="required" size="25" type="text" name="emailAddress" id="emailAddress" placeholder="Email Address" />
+                </li>
+                <li>
+                    <label for="Phone-Number">Phone Number:</label>
+                    <input required="required" size="10" maxlength="7" type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" />
+                </li>
+                <li>
+                    <label for="contactMe">Contact me by:</label>
+                    <input required="required" list="contact-list" size="25" type="text" id="contactType" name="contactType" />
+
+                    <datalist id="contact-list">
+                        <option value="Email" />
+                        <option value="Phone" />
+                    </datalist>
+                </li>
+                <li>
+                    <label for="commentSection">Comments:</label>
+                    <textarea placeholder="Comments"></textarea>
+                </li>
+                <li>
+                    <label>
+                        <input type="submit" value="submit" class="inputbutton" />
+                    </label>
+                </li>
+            </ul>
+        </form>
+    </section>
+
+    <footer>
+        <p><span id="copyrightYear"></span><img src="images/facebookgray.png" id="facebookLogo" /></p>
+    </footer>
+    <script src="insuranceScript.js"></script>
+</body>
+</html>
